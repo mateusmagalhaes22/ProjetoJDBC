@@ -17,12 +17,12 @@ public class Main {
 		int r = 0;
 		Scanner in = new Scanner(System.in);
 		do {
-			System.out.println("|| GERENCIAMENTO DE ESTOQUE ||");
-			System.out.println("adicionar vendedor: 1 \n " + "remover vendedor: 2 \n" + "visualizar vendedor: 3 \n"
-					+ "atualizar vendedor: 4 \n" + "adicionar produto: 5 \n" + "remover produto: 6 \n"
-					+ "visualizar produto: 7 \n" + "atualizar produto: 8 \n" + "adicionar venda: 9 \n"
-					+ "remover venda: 10 \n" + "visualizar venda: 11 \n" + "atualizar venda: 12 \n");
-			System.out.print("digite um valor: ");
+			System.out.println("\n\n|| GERENCIAMENTO DE ESTOQUE ||");
+			System.out.println("1- Adicionar vendedor\n" + "2- Remover vendedor\n" + "3- Visualizar vendedor\n"
+					+ "4- Atualizar vendedor\n" + "5- Adicionar produto\n" + "6- Remover produto\n"
+					+ "7- Visualizar produto\n" + "8- Atualizar produto\n" + "9- Adicionar venda\n"
+					+ "10- Remover venda\n" + "11- Visualizar venda\n" + "12- Atualizar venda\n" + "13- Finalizar\n");
+			System.out.print("Digite o número da operação que deseja efetuar: ");
 			r = in.nextInt();
 			System.out.print("\n");
 			switch (r) {

@@ -22,14 +22,16 @@ public class VendedorController {
 		try {
 			Vendedor v = new Vendedor();
 			System.out.println("vamos inserir um novo vendedor:");
-			System.out.println("Codigo: ");
-			v.setCodv(in.nextInt());
 			System.out.println("Nome: ");
 			v.setNomev(in.nextLine());
 			System.out.println("Endereco: ");
 			v.setEndereco(in.nextLine());
 			System.out.println("Sexo: ");
 			v.setSexo(in.nextLine());
+			System.out.println("Codigo: ");
+			v.setCodv(in.nextInt());
+			System.out.println("CPF: ");
+			v.setCpf(in.nextInt());
 			dao.inserirVendedor(v);
 		} catch (Exception e) {
 			r = false;

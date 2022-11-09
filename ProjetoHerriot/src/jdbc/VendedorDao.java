@@ -17,7 +17,7 @@ public class VendedorDao {
 
 	public void inserirVendedor(Vendedor emp) {
 
-		String sql = "INSERT INTO vendedor VALUES(?,?,?,?)";
+		String sql = "INSERT INTO vendedor VALUES(?,?,?,?,?)";
 
 		try {
 
@@ -25,8 +25,9 @@ public class VendedorDao {
 
 			preparador.setInt(1, emp.getCodv());
 			preparador.setString(2, emp.getNomev());
-			preparador.setString(3, emp.getEndereco());
-			preparador.setString(4, emp.getSexo());
+			preparador.setInt(3, emp.getCpf());
+			preparador.setString(4, emp.getEndereco());
+			preparador.setString(5, emp.getSexo());
 			preparador.execute();
 			preparador.close();
 
